@@ -1,0 +1,95 @@
+table, th, td {
+    border: 2px solid black;
+}
+
+.nav{
+    font-family:Monaco;
+    text-align: center;
+}
+.Acerca-Mi{
+    text-align: center;
+    color: #a42706;
+
+}
+.Conocimientos{
+
+    color: #a42706;
+    text-align: center;
+}
+
+.Fortaleza{
+    text-align: center;
+    color: #a42706;
+}
+
+.Proyecto{
+    color: #a42706;
+    text-align: center;
+}
+.Admiro{
+    color: #a42706;
+    text-align: justify;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7eadde;
+    color: #000000;
+    text-align: center;
+}
+*{box-sizing:border-box;}
+
+
+form{
+    width:350px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color: #a42706;
+}
+
+form label{
+    width:85px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+}
+
+form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+}
+
+form input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+textarea{
+    width:100%;
+    height:200px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    /*resize: vertical | horizontal | none | both*/
+    resize:none;
+    display:block;
+}
