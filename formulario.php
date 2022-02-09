@@ -8,11 +8,12 @@
 </head>
 <body style="background-color:#a9cac3">
 
+
 <div>
     <div class="nav">
         <a class="titulo" href="Index.php">INDEX</a>.
     </div>
-    <form action="formulario.php" method="POST">
+    <form action="store.php" method="POST">
 
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo"/>
@@ -41,10 +42,8 @@
             $email =  $_POST['email'];
             $mensaje =  $_POST['mensaje'];
             $ciudad =  $_POST['select'];
-            echo "<b>$nombre</b>";
-            echo "<b>$email</b>";
-            echo "<b>$mensaje</b>";
-            echo "<b>$ciudad</b>";
+            $sql = "INSERT INTO solicitudes (nombre,comentario,email,ciudad)VALUES ('$nombre', '$mensaje', '$email', '$ciudad')";
+              $conn->exec($sql);
         }
 
     ?>
