@@ -115,6 +115,7 @@
 </section>
 
 <br><br><br><br>
+<hr>
 <div class="footer">
     <section>
         <p>Contactame</p>
