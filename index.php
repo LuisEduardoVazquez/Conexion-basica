@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Practica HTML</title>
+    <title>Practica Conexion basica</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
 </head>
