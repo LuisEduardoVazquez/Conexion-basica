@@ -7,6 +7,10 @@
 
 </head>
 <body style="background-color:#a9cac3">
+<?php
+    include("conexion.php");
+?>
+
 <div class="nav">
     <a href="formulario.php">FORMULARIO</a>.
 </div>
@@ -116,6 +120,32 @@
 
 <br><br><br><br>
 <hr>
+<?php
+    include("conexion.php");
+
+    echo '<center><span text-align: center; style="color:#a42706;font-size:25px;">Personas interesadas</span></center>';
+    //$sql = "SELECT * FROM solicitudes";
+    //$stml = $conn -> prepare($sql);
+    //$stml -> execute();
+    //$stmt -> setFetchMode(PDO::FETCH_ASSOC);
+
+    //foreach($result->fetchAll() as $row)
+    //{
+      //  echo $row['nombre'];
+    //}
+
+    $query= $conn->query('select * from solicitudes');
+    $query->setFetchMode(PDO::FETCH_ASSOC);
+        while ($row = $query->fetch()) {
+            echo "ID:" .$row['id'] . "<br/>";
+            echo "Nombre:" .$row['nombre'] . "<br/>";
+            echo "Comentario:" .$row['comentario'] . "<br/>";
+            echo "Email:" .$row['email'] . "<br/>";
+            echo "Ciudad:" .$row['ciudad'] . "<br/>";
+            echo "<br/><br/>";
+        }
+
+?>
 <div class="footer">
     <section>
         <p>Contactame</p>
